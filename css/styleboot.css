@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2? family= Bebas+Neue & family= Montserrat & family= Nanum+Gothic & family= PT+Serif & family= Roboto:wght@100 & family= Signika+Negative:wght@300 & display=swap');
+
+* {
+    /*reset*/
+    margin: 0;
+    padding: 0;
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+.colornav {
+    background-color: #333;
+
+}
+
+.flexible{
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.nav-link{
+    padding: 0 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    
+}
+
+.nav-link:hover{
+    background-color: gold;
+}
+
+
+.logo{
+    width: 15%;
+    height: auto;
+}
+ 
+.fondoIndex{
+    width: 100%;
+    background-image: url(./../assets/img/cosecha5.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+.btn-warning{
+  width: 30%;
+
+}
+
+
+/*page Nosotros*/
+.nosotrosConte{
+    height: 50vh;
+}
+
+
+.card-group{
+ height: 80%;
+ margin: 0 auto;
+ text-align: center;
+ margin-bottom: 5%;
+}
+
+                      /*a cada imag de los cards le di su tamaño por ser diferentes */
+.una{
+    width: 80%;
+    object-fit: cover;
+    margin-left: 10%;
+}
+.dos{
+    width: 86%;
+    object-fit: cover;
+    margin-left: 7%;
+}
+.tres{
+    width: 89%;
+    object-fit: cover;
+    margin-left: 6%;
+}
+
+
+.recuadroNosotros{
+    background-color: gold;
+    height: 45vh;
+}
+.recuadroNosotros p{
+    font-size: 1rem;
+}
+.tituloAbajo{
+    color: aliceblue;
+}
+
+
+
+/*pageservicios*/
+
+.carousel-item{
+   height: 80vh;
+}
+.imgCarrusel1 {
+    height: 100%;
+    object-fit: cover;
+}
+.imgCarrusel2{
+    object-fit: cover;
+    height: 100%;
+}
+
+/*page calidad*/
+.calidadBoot {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+
+ 
+}
+.tituloCalidad{
+    background-color: gold;
+    height: 50vh;
+    width: 100%;
+}
+.tituloCalidad h1 {
+    padding-top: 2%;
+
+}
+.tituloCalidad p {
+    padding: 3%;
+    font-size: 1rem;
+    
+}
+
+
+
+/*page contacto*/
+.contacto{
+    background-color: rgb(103, 94, 40);
+    width: 90%;
+   height: 100vh;
+   
+    
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    
+.flexible{                                /*el menu hamburguesa se colapsa debajo del logo*/
+    width: initial;
+    justify-content: flex-start;
+}
+.fondoIndex h1{
+    font-size: 1rem;
+}
+
+.btn-warning {
+    width: 30%;
+    font-size: 0.4rem;
+
+}
+
+/*pageservicios*/
+.carousel-item {
+    height: 100vh;
+
+}
+/*pagenosotros*/
+.card-group {
+    height: initial;
+}
+.nosotrosConte{
+    height: initial;
+}
+.recuadroNosotros p{
+    font-size: 0.6rem;
+}
+.recuadroNosotros h1 {
+    font-size: 0.8rem;
+}
+
+
+
+/*calidad*/
+.tituloCalidad h1{
+    font-size: 0.8rem;
+  
+}
+
+
+/*contacto*/
+.contacto{
+    background-color: rgb(79, 69, 15);
+   
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
