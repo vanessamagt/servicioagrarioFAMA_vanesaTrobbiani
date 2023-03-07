@@ -1,217 +1,178 @@
-@import url('https://fonts.googleapis.com/css2? family= Bebas+Neue & family= Montserrat & family= Nanum+Gothic & family= PT+Serif & family= Roboto:wght@100 & family= Signika+Negative:wght@300 & display=swap');
-
+@charset "UTF-8";
+/*crear variables */
+@import url("https://fonts.googleapis.com/css2? family= Bebas+Neue & family= Montserrat & family= Nanum+Gothic & family= PT+Serif & family= Roboto:wght@100 & family= Signika+Negative:wght@300 & display=swap");
+/*Maps footer*/
+/*presentado en main_nosotros.scss*/
 * {
-    /*reset*/
-    margin: 0;
-    padding: 0;
-    font-family: 'Signika Negative', sans-serif;
-    font-weight: 400;
-    box-sizing: border-box;
-}
+  /*reset*/
+  margin: 0;
+  padding: 0;
+  font-family: "Signika Negative", sans-serif;
+  font-weight: 400;
+  box-sizing: border-box; }
+
+@keyframes float {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-15px); }
+  100% {
+    transform: translateY(0); } }
+
 .colornav {
-    background-color: #333;
+  background-color: #333; }
+  .colornav .logo {
+    width: 15%;
+    height: auto; }
 
-}
-
-.flexible{
-    width: 100%;
-    justify-content: flex-end;
-}
-
-.nav-link{
+.flexible {
+  width: 100%;
+  justify-content: flex-end; }
+  .flexible .nav-link {
     padding: 0 5px;
     font-weight: bold;
-    transition: all 0.3s ease;
-    
-}
+    transition: all 0.3s ease; }
+    .flexible .nav-link:hover {
+      background-color: gold; }
 
-.nav-link:hover{
-    background-color: gold;
-}
+.btn {
+  transition: 0.4s ease-in;
+  background-color: gold; }
+  .btn .btn::before,
+  .btn .btn::after {
+    z-index: -1; }
+  .btn:hover {
+    background: #097003;
+    box-shadow: 0 0 5px #b6f009, 0 0 25px #b6f009, 0 0 200px #b6f009; }
 
+.tituloAbajo, .nosotrosConte .recuadroNosotros .recuadroNosotros h1, .calidadBoot .tituloCalidad h1 {
+  color: aliceblue; }
 
-.logo{
-    width: 15%;
-    height: auto;
-}
- 
-.fondoIndex{
-    width: 100%;
-    background-image: url(./../assets/img/cosecha5.jpg);
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  
-}
-.btn-warning{
-  width: 30%;
+.prueba_sass, .fondoIndex {
+  display: flex;
+  justify-content: start;
+  align-items: center; }
 
-}
-
+.fondoIndex {
+  width: 100%;
+  background-image: url(./../assets/img/cosecha5.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .fondoIndex .btn-warning {
+    width: 30%; }
 
 /*page Nosotros*/
-.nosotrosConte{
-    height: 50vh;
-}
+.nosotrosConte {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /*mixin*/
+  height: 70vh; }
+  .nosotrosConte .recuadroNosotros {
+    background-color: gold;
+    height: 65vh; }
+    .nosotrosConte .recuadroNosotros .recuadroNosotros h1 {
+      color: black; }
+      .nosotrosConte .recuadroNosotros .recuadroNosotros h1 .recuadroNosotros p {
+        font-size: 1.5rem; }
 
-
-.card-group{
- height: 80%;
- margin: 0 auto;
- text-align: center;
- margin-bottom: 5%;
-}
-
-                      /*a cada imag de los cards le di su tamaño por ser diferentes */
-.una{
+.card-group {
+  height: 80%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 5%;
+  /*a cada imag de los cards le di su tamaño por ser diferentes */ }
+  .card-group .una {
     width: 80%;
     object-fit: cover;
-    margin-left: 10%;
-}
-.dos{
+    margin-left: 10%; }
+  .card-group .dos {
     width: 86%;
     object-fit: cover;
-    margin-left: 7%;
-}
-.tres{
+    margin-left: 7%; }
+  .card-group .tres {
     width: 89%;
     object-fit: cover;
-    margin-left: 6%;
-}
-
-
-.recuadroNosotros{
-    background-color: gold;
-    height: 45vh;
-}
-.recuadroNosotros p{
-    font-size: 1rem;
-}
-.tituloAbajo{
-    color: aliceblue;
-}
-
-
+    margin-left: 6%; }
 
 /*pageservicios*/
-
-.carousel-item{
-   height: 80vh;
-}
-.imgCarrusel1 {
+.carousel-item {
+  height: 80vh; }
+  .carousel-item .imgCarrusel1 {
     height: 100%;
+    object-fit: cover; }
+  .carousel-item .imgCarrusel2 {
     object-fit: cover;
-}
-.imgCarrusel2{
-    object-fit: cover;
-    height: 100%;
-}
+    height: 100%; }
 
 /*page calidad*/
 .calidadBoot {
   margin: 0 auto;
   justify-content: center;
-  align-items: center;
-
- 
-}
-.tituloCalidad{
+  align-items: center; }
+  .calidadBoot .tituloCalidad {
     background-color: gold;
     height: 50vh;
-    width: 100%;
-}
-.tituloCalidad h1 {
+    width: 100%; }
+  .calidadBoot .tituloCalidad h1 {
+    color: black;
     padding-top: 2%;
-
-}
-.tituloCalidad p {
-    padding: 3%;
-    font-size: 1rem;
-    
-}
-
-
+    /*extend pagina nosotros*/ }
+    .calidadBoot .tituloCalidad h1 .tituloCalidad p {
+      padding: 3%; }
 
 /*page contacto*/
-.contacto{
-    background-color: rgb(103, 94, 40);
-    width: 90%;
-   height: 100vh;
-   
-    
-}
+.contacto {
+  background-color: #789132;
+  width: 90%;
+  height: 100vh; }
 
+.iconos-redes {
+  animation: float infinite 4s ease-in-out; }
 
+.red--facebook {
+  color: #1f1ff5; }
 
+.red--instagram {
+  color: #fa05a4;
+  animation-delay: 0.5s; }
+
+.red--youtube {
+  color: red;
+  animation-delay: 1s; }
+
+.red--whatsapp {
+  color: #16f716;
+  animation-delay: 1.5s; }
 
 @media screen and (max-width: 768px) {
-    
-.flexible{                                /*el menu hamburguesa se colapsa debajo del logo*/
+  .flexible {
+    /*el menu hamburguesa se colapsa debajo del logo*/
     width: initial;
-    justify-content: flex-start;
-}
-.fondoIndex h1{
-    font-size: 1rem;
-}
-
-.btn-warning {
-    width: 30%;
-    font-size: 0.4rem;
-
-}
-
-/*pageservicios*/
-.carousel-item {
-    height: 100vh;
-
-}
-/*pagenosotros*/
-.card-group {
-    height: initial;
-}
-.nosotrosConte{
-    height: initial;
-}
-.recuadroNosotros p{
-    font-size: 0.6rem;
-}
-.recuadroNosotros h1 {
-    font-size: 0.8rem;
-}
-
-
-
-/*calidad*/
-.tituloCalidad h1{
-    font-size: 0.8rem;
-  
-}
-
-
-/*contacto*/
-.contacto{
-    background-color: rgb(79, 69, 15);
-   
-}
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    justify-content: flex-end;
+    align-items: end; }
+  .fondoIndex h1 {
+    font-size: 1.5rem; }
+    .fondoIndex h1 .btn-warning {
+      width: 30%;
+      font-size: 0.4rem; }
+  /*pagenosotros*/
+  .nosotrosConte {
+    height: initial; }
+    .nosotrosConte .recuadroNosotros h1 {
+      font-size: 0.8rem; }
+      .nosotrosConte .recuadroNosotros h1 .recuadroNosotros p {
+        font-size: 0.6rem; }
+  .card-group {
+    height: initial; }
+  /*pageservicios*/
+  .carousel-item {
+    height: 100vh; }
+  /*calidad*/
+  .tituloCalidad h1 {
+    font-size: 0.8rem; }
+  /*contacto*/
+  .contacto {
+    background-color: #4f450f; } }

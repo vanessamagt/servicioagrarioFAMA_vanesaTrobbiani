@@ -1,0 +1,61 @@
+@media screen and (max-width: 768px) {
+
+    .flexible {
+        /*el menu hamburguesa se colapsa debajo del logo*/
+        width: initial;
+        justify-content: flex-end;
+        align-items: end;
+
+    }
+
+
+    .fondoIndex h1 {
+        font-size: $fuente-normal;
+
+        .btn-warning {
+            width: 30%;
+            font-size: 0.4rem;
+
+        }
+    }
+
+    /*pagenosotros*/
+    .nosotrosConte {
+        height: initial;
+
+        .recuadroNosotros h1 {
+            font-size: $fuente-pequeña;
+
+            .recuadroNosotros p {
+                font-size: 0.6rem;
+            }
+        }
+
+    }
+
+    .card-group {
+        height: initial;
+    }
+
+
+    /*pageservicios*/
+    .carousel-item {
+        height: 100vh;
+    }
+
+
+    /*calidad*/
+    .tituloCalidad h1 {
+        font-size: $fuente-pequeña;
+
+    }
+
+
+    /*contacto*/
+    .contacto {
+        background-color: rgb(79, 69, 15);
+
+    }
+
+
+}

@@ -1,0 +1,27 @@
+/*page calidad*/
+.calidadBoot {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+
+    .tituloCalidad {
+        background-color: $color-terciario;
+        height: 50vh;
+        width: 100%;
+
+    }
+
+    .tituloCalidad h1 {
+        color: black;
+        padding-top: 2%;
+
+        /*extend pagina nosotros*/
+        @extend .tituloAbajo;
+
+
+        .tituloCalidad p {
+            padding: 3%
+        }
+    }
+
+}

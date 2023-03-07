@@ -1,0 +1,55 @@
+/*page Nosotros*/
+.nosotrosConte {
+    @include flex-direction-center(row);
+    /*mixin*/
+    height: 70vh;
+
+    .recuadroNosotros {
+
+        background-color: $color-terciario;
+        height: 65vh;
+
+        .recuadroNosotros h1 {
+            color: black;
+
+            @extend .tituloAbajo;
+
+            .recuadroNosotros p {
+                font-size: $fuente-normal;
+            }
+
+        }
+
+    }
+
+}
+
+
+.card-group {
+    height: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 5%;
+
+    /*a cada imag de los cards le di su tamaño por ser diferentes */
+    .una {
+        width: 80%;
+        object-fit: cover;
+        margin-left: 10%;
+
+    }
+
+    .dos {
+        width: 86%;
+        object-fit: cover;
+        margin-left: 7%;
+
+
+    }
+
+    .tres {
+        width: 89%;
+        object-fit: cover;
+        margin-left: 6%;
+    }
+}

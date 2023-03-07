@@ -1,0 +1,38 @@
+.colornav {
+    background-color: $color-primario;
+
+    .logo {
+        width: 15%;
+        height: auto;
+    }
+}
+
+.flexible {
+    width: 100%;
+    justify-content: flex-end;
+
+    .nav-link {
+        padding: 0 5px;
+        font-weight: bold;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: $color-terciario;
+        }
+
+    }
+}
+
+.btn {
+    transition: 0.4s ease-in;
+    background-color: gold;
+    .btn::before,
+        .btn::after {
+            z-index: -1;
+        }
+                &:hover {
+                    background: #097003;
+                    box-shadow: 0 0 5px #b6f009, 0 0 25px #b6f009, 0 0 200px #b6f009;
+                }
+}
+

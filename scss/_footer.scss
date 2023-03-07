@@ -1,0 +1,24 @@
+.iconos-redes {
+    animation: float infinite 4s ease-in-out;
+
+}
+
+
+.red--facebook {
+    color: map-get($map: $redes, $key: facebook);
+}
+
+.red--instagram {
+    color: map-get($map: $redes, $key: Instagram);
+    animation-delay: 0.5s;
+}
+
+.red--youtube {
+    color: map-get($map: $redes, $key: youtube);
+    animation-delay: 1s;
+}
+
+.red--whatsapp {
+    color: map-get($map: $redes, $key: whatssap);
+    animation-delay: 1.5s;
+}
