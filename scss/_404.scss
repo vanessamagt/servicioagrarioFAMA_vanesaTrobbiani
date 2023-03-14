@@ -1,0 +1,30 @@
+.paginaError {
+    background-image: url(../assets/img/nene_durmiendo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 90vh;
+    width: 100%;
+
+}
+
+
+#countUp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    .number {
+        font-size: 8rem;
+        font-weight: 500px;
+        color: $color-blanco;
+        text-shadow: 0px 20px 7px black;
+
+    }
+
+
+
+
+}
