@@ -58,6 +58,16 @@
 
     }
 
+        /*pagina 404*/
+        .paginaError img {
+    
+            max-width: 100%;
+            width: 250px; // asume que este es el tamaño por defecto 
+            object-fit: cover;
+            object-position: right;
+    
+    
+        }
 
 
 }

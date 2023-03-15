@@ -195,4 +195,10 @@
     font-size: 0.8rem; }
   /*contacto*/
   .contacto {
-    background-color: #4f450f; } }
+    background-color: #4f450f; }
+  /*pagina 404*/
+  .paginaError img {
+    max-width: 100%;
+    width: 250px;
+    object-fit: cover;
+    object-position: right; } }
