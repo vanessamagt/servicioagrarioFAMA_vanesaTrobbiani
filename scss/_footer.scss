@@ -1,8 +1,11 @@
 .iconos-redes {
     animation: float infinite 4s ease-in-out;
-
+   
 }
 
+ .red {
+     font-size: 20px;
+ }
 
 .red--facebook {
     color: map-get($map: $redes, $key: facebook);

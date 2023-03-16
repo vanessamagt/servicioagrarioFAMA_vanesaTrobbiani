@@ -2,23 +2,33 @@
 .nosotrosConte {
     @include flex-direction-center(row);
     /*mixin*/
-    height: 70vh;
+
 
     .recuadroNosotros {
 
         background-color: $color-terciario;
-        height: 65vh;
+    
+            height: auto;
+            word-wrap: break-word;
+            text-align: center;
+
+
+
 
         .recuadroNosotros h1 {
             color: black;
-
+         
+            
             @extend .tituloAbajo;
 
-            .recuadroNosotros p {
-                font-size: $fuente-normal;
-            }
 
         }
+                .parrafoNosotros{
+                    text-align: center;
+                        padding-bottom: 5%;
+                        font-size: $fuente-normal;
+                      
+                }
 
     }
 
@@ -52,4 +62,11 @@
         object-fit: cover;
         margin-left: 6%;
     }
+                .card-img-top {
+                    transition: transform .5s;
+                }
+        
+                .card-img-top:hover {
+                    transform: scale(1.1);
+                }
 }

@@ -1,22 +1,31 @@
 .prueba_sass {
     display: flex;
     justify-content: start;
-    align-items: center;
-
+        align-items: center;
+        padding: 10px;
 }
 
 
 .fondoIndex {
     @extend .prueba_sass;
     width: 100%;
-    background-image: url(./../assets/img/cosecha5.jpg);
+    background-image: url(./../assets/img/cosecha5.ia.jpg);
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
+    h1 {
+            font-size: 3rem;
+        }
+    
+        .tituloh2 {
+            font-size: 2rem;
+            text-shadow: 0px 20px 7px rgb(17, 17, 16);
+        }
     .btn-warning {
         width: 30%;
 
     }
+
 }

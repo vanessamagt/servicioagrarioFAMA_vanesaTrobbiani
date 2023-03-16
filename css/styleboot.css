@@ -22,7 +22,7 @@
 .colornav {
   background-color: #333; }
   .colornav .logo {
-    width: 15%;
+    width: 17%;
     height: auto; }
 
 .flexible {
@@ -51,15 +51,21 @@
 .prueba_sass, .fondoIndex {
   display: flex;
   justify-content: start;
-  align-items: center; }
+  align-items: center;
+  padding: 10px; }
 
 .fondoIndex {
   width: 100%;
-  background-image: url(./../assets/img/cosecha5.jpg);
+  background-image: url(./../assets/img/cosecha5.ia.jpg);
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
+  .fondoIndex h1 {
+    font-size: 3rem; }
+  .fondoIndex .tituloh2 {
+    font-size: 2rem;
+    text-shadow: 0px 20px 7px #111110; }
   .fondoIndex .btn-warning {
     width: 30%; }
 
@@ -68,15 +74,18 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /*mixin*/
-  height: 70vh; }
+  /*mixin*/ }
   .nosotrosConte .recuadroNosotros {
     background-color: gold;
-    height: 65vh; }
+    height: auto;
+    word-wrap: break-word;
+    text-align: center; }
     .nosotrosConte .recuadroNosotros .recuadroNosotros h1 {
       color: black; }
-      .nosotrosConte .recuadroNosotros .recuadroNosotros h1 .recuadroNosotros p {
-        font-size: 1.5rem; }
+    .nosotrosConte .recuadroNosotros .parrafoNosotros {
+      text-align: center;
+      padding-bottom: 5%;
+      font-size: 1rem; }
 
 .card-group {
   height: 80%;
@@ -96,6 +105,10 @@
     width: 89%;
     object-fit: cover;
     margin-left: 6%; }
+  .card-group .card-img-top {
+    transition: transform .5s; }
+  .card-group .card-img-top:hover {
+    transform: scale(1.1); }
 
 /*pageservicios*/
 .carousel-item {
@@ -114,14 +127,22 @@
   align-items: center; }
   .calidadBoot .tituloCalidad {
     background-color: gold;
-    height: 50vh;
-    width: 100%; }
+    height: auto;
+    width: 100%;
+    word-wrap: break-word;
+    text-align: center; }
   .calidadBoot .tituloCalidad h1 {
     color: black;
-    padding-top: 2%;
+    padding: 3%;
+    line-height: 5%;
     /*extend pagina nosotros*/ }
-    .calidadBoot .tituloCalidad h1 .tituloCalidad p {
-      padding: 3%; }
+  .calidadBoot .parrafoCalidad {
+    text-align: center;
+    padding-bottom: 5%;
+    font-size: 1rem; }
+  .calidadBoot .letra1 {
+    font-size: 1.4rem;
+    font-style: italic; }
 
 .paginaError {
   background-image: url(../assets/img/nene_durmiendo.jpg);
@@ -152,6 +173,9 @@
 .iconos-redes {
   animation: float infinite 4s ease-in-out; }
 
+.red {
+  font-size: 20px; }
+
 .red--facebook {
   color: #1f1ff5; }
 
@@ -174,7 +198,7 @@
     justify-content: flex-end;
     align-items: end; }
   .fondoIndex h1 {
-    font-size: 1.5rem; }
+    font-size: 2rem; }
     .fondoIndex h1 .btn-warning {
       width: 30%;
       font-size: 0.4rem; }
