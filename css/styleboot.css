@@ -83,6 +83,7 @@
     .nosotrosConte .recuadroNosotros .recuadroNosotros h1 {
       color: black; }
     .nosotrosConte .recuadroNosotros .parrafoNosotros {
+      line-height: 1.8em;
       text-align: center;
       padding-bottom: 5%;
       font-size: 1rem; }
@@ -137,6 +138,7 @@
     line-height: 5%;
     /*extend pagina nosotros*/ }
   .calidadBoot .parrafoCalidad {
+    line-height: 1.8em;
     text-align: center;
     padding-bottom: 5%;
     font-size: 1rem; }
