@@ -9,17 +9,24 @@
 
     }
 
+         .fondoIndex {
+             width: 100%;
+             height: 100vh;
+             object-fit: cover;
+             object-position: bottom;
 
-    .fondoIndex h1 {
-        font-size: $fuente-personalizada;
-
-        .btn-warning {
-            width: 30%;
-            font-size: 0.4rem;
-
-        }
-    }
-
+        .fondoIndex h1 {
+        
+            font-size: $fuente-personalizada;
+            
+                .btn-warning {
+                    width: 30%;
+                    font-size: 0.4rem;
+            
+                }
+            }
+         }
+    
     /*pagenosotros*/
     .nosotrosConte {
         height: initial;
@@ -40,10 +47,10 @@
 
 
     /*pageservicios*/
-    .carousel-item {
-        height: 100vh;
-    }
-
+         .carousel-item {
+        height: 250px;
+            max-width: 400px !important;
+        }
 
     /*calidad*/
     .tituloCalidad h1 {
@@ -60,15 +67,15 @@
     }
 
         /*pagina 404*/
-        .paginaError img {
-    
-            max-width: 100%;
-            width: 250px; // asume que este es el tamaño por defecto 
+                .paginaError {
+                    width: 95%;
+                    height: 300px;
             object-fit: cover;
-            object-position: right;
-    
-    
-        }
-
-
-}
+            object-position: center;
+            
+                .number {
+                    font-size: 3rem !important;
+                }
+            }
+            
+            }
