@@ -202,7 +202,6 @@
     align-items: end; }
   .fondoIndex {
     width: 100%;
-    height: 100vh;
     object-fit: cover;
     object-position: bottom; }
     .fondoIndex .fondoIndex h1 {
