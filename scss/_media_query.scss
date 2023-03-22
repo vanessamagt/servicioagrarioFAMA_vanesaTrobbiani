@@ -1,13 +1,25 @@
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 0) and (max-width: 768px) {
 
   
-    .flexible {
-        /*el menu hamburguesa se colapsa debajo del logo*/
-        justify-content: flex-end;
-        align-items: end;
+    .cabecera {
         width: 100%;
     }
+                .padrelogo {
+        
+                    width: 200px;
+                    height: 30%;
+        
+                    .logo {
+                        width: 30px;
+                    }
+        
+                }
 
+         .flexible{
+            justify-content: flex-end;
+            align-items: end;
+           }     
+    
          .fondoIndex {
              width: 100%;
              object-fit: cover;
@@ -15,7 +27,7 @@
 
         .fondoIndex h1 {
         
-            font-size: $fuente-personalizada;
+            font-size: $fuente-normal;
             
                 .btn-warning {
                     width: 30%;
@@ -65,15 +77,15 @@
     }
 
         /*pagina 404*/
-                .paginaError {
-                    width: 95%;
-                    height: 300px;
-            object-fit: cover;
-            object-position: center;
+                                                                 .paginaError {
+                                                                     width: 95%;
+                                                                     height: 300px;
+                                                                     object-fit: cover;
+                                                                     object-position: center;
             
                 .number {
                     font-size: 3rem !important;
                 }
             }
             
-            }
+}

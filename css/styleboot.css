@@ -234,18 +234,23 @@
   color: #16f716;
   animation-delay: 1.5s; }
 
-@media screen and (max-width: 768px) {
-  .flexible {
-    /*el menu hamburguesa se colapsa debajo del logo*/
-    justify-content: flex-end;
-    align-items: end;
+@media screen and (min-width: 0) and (max-width: 768px) {
+  .cabecera {
     width: 100%; }
+  .padrelogo {
+    width: 200px;
+    height: 30%; }
+    .padrelogo .logo {
+      width: 30px; }
+  .flexible {
+    justify-content: flex-end;
+    align-items: end; }
   .fondoIndex {
     width: 100%;
     object-fit: cover;
     object-position: bottom; }
     .fondoIndex .fondoIndex h1 {
-      font-size: 2rem; }
+      font-size: 1rem; }
       .fondoIndex .fondoIndex h1 .btn-warning {
         width: 30%;
         font-size: 0.4rem; }
