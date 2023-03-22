@@ -74,7 +74,7 @@
 
 .cardIndex {
   margin: 8%;
-  background-color: #434443; }
+  background-color: #0a0b0a; }
 
 /*page Nosotros*/
 .nosotrosConte {
@@ -237,9 +237,9 @@
 @media screen and (max-width: 768px) {
   .flexible {
     /*el menu hamburguesa se colapsa debajo del logo*/
-    width: initial;
     justify-content: flex-end;
-    align-items: end; }
+    align-items: end;
+    width: 100%; }
   .fondoIndex {
     width: 100%;
     object-fit: cover;
